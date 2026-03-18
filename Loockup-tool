@@ -1,0 +1,113 @@
+import os
+import sys
+import socket
+import time
+
+RED = "\033[91m"
+GREEN = "\033[92m"
+CYAN = "\033[96m"
+RESET = "\033[0m"
+
+def banner():
+    print(RED + r"""
+██╗      ██████╗  ██████╗ ██╗  ██╗██╗   ██╗██████╗ 
+██║     ██╔═══██╗██╔════╝ ██║ ██╔╝██║   ██║██╔══██╗
+██║     ██║   ██║██║  ███╗█████╔╝ ██║   ██║██████╔╝
+██║     ██║   ██║██║   ██║██╔═██╗ ██║   ██║██╔═══╝ 
+███████╗╚██████╔╝╚██████╔╝██║  ██╗╚██████╔╝██║     
+╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚═╝     
+
+████████╗ ██████╗  ██████╗ ██╗     
+╚══██╔══╝██╔═══██╗██╔═══██╗██║     
+   ██║   ██║   ██║██║   ██║██║     
+   ██║   ██║   ██║██║   ██║██║     
+   ██║   ╚██████╔╝╚██████╔╝███████╗
+   ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝
+""" + RESET)
+
+    print(CYAN + """
+Instagram: only.giorgi404
+Facebook: only.giorgi
+Discord: only.giorgi
+Github: onlygiorgi-20
+Tiktok: only.giorgi20
+""" + RESET)
+
+def loading(text="Loading"):
+    print(GREEN + text, end="")
+    for i in range(3):
+        time.sleep(0.5)
+        print(".", end="")
+    print(RESET)
+
+def phone_lookup():
+    number = input("Enter phone number: ")
+    loading("Looking up phone")
+    print(GREEN + "Number:", number)
+    print("Country: Unknown")
+    print("Carrier: Unknown" + RESET)
+
+def ip_lookup():
+    ip = input("Enter IP: ")
+    loading("Scanning IP")
+    try:
+        host = socket.gethostbyaddr(ip)
+        print(GREEN + "Host:", host[0] + RESET)
+    except:
+        print(RED + "Couldn't find info" + RESET)
+
+def username_lookup():
+    user = input("Enter username: ")
+    loading("Searching username across platforms")
+
+    sites = {
+        "Instagram": f"https://instagram.com/{user}",
+        "Facebook": f"https://facebook.com/{user}",
+        "TikTok": f"https://tiktok.com/@{user}",
+        "Github": f"https://github.com/{user}",
+        "Twitter/X": f"https://x.com/{user}",
+        "YouTube": f"https://www.youtube.com/@{user}",
+        "Reddit": f"https://www.reddit.com/user/{user}",
+        "Pinterest": f"https://www.pinterest.com/{user}",
+        "Snapchat": f"https://www.snapchat.com/add/{user}",
+        "Telegram": f"https://t.me/{user}",
+        "Twitch": f"https://www.twitch.tv/{user}",
+        "LinkedIn": f"https://www.linkedin.com/in/{user}",
+        "Medium": f"https://medium.com/@{user}",
+        "Quora": f"https://www.quora.com/profile/{user}",
+        "SoundCloud": f"https://soundcloud.com/{user}",
+        "VK": f"https://vk.com/{user}",
+        "Tumblr": f"https://{user}.tumblr.com",
+        "Flickr": f"https://www.flickr.com/people/{user}",
+        "Steam": f"https://steamcommunity.com/id/{user}",
+        "Discord (bio link)": f"https://discord.com/users/{user}"
+    }
+
+    for site, link in sites.items():
+        print(GREEN + f"{site}: {link}" + RESET)
+
+def menu():
+    while True:
+        print(CYAN + """
+[1] Phone Lookup
+[2] IP Lookup
+[3] Username Lookup
+[4] Exit
+""" + RESET)
+
+        choice = input("Choose: ")
+
+        if choice == "1":
+            phone_lookup()
+        elif choice == "2":
+            ip_lookup()
+        elif choice == "3":
+            username_lookup()
+        elif choice == "4":
+            print(RED + "Exiting... goodbye thank you for using lookup tool" + RESET)
+            sys.exit()
+        else:
+            print(RED + "Invalid option" + RESET)
+
+banner()
+menu()
