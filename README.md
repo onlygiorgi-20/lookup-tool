@@ -17,7 +17,8 @@ No real tracking or hacking is included
 
 ⭐ Star the repo if you like it
 
-🚀 Installation 📱 Termux (Android) pkg update && pkg upgrade pkg install git python git clone https://github.com/onlygiorgi-20/lookup-tool.git 
+🚀 Installation 📱 Termux (Android) 
+pkg update && pkg upgrade pkg install git python git clone https://github.com/onlygiorgi-20/lookup-tool.git 
 cd lookup-tool
 python lookup.py 
 💻 Linux sudo apt update && sudo apt upgrade 
