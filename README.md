@@ -17,6 +17,4 @@ No real tracking or hacking is included
 
 ⭐ Star the repo if you like it
 
-🚀 Installation 📱 Termux (Android) pkg update && pkg upgrade pkg install git python git clone https://github.com/onlygiorgi-20/lookup-tool.git cd lookup-tool python lookup.py
-💻 Linux sudo apt update && sudo apt upgrade sudo apt install git python3 git clone https://github.com/onlygiorgi-20/lookup-tool.git cd lookup-tool python3 lookup.py 
-🪟 Windows Install Python from https://python.org Install Git from https://git-scm.com Open CMD git clone https://github.com/onlygiorgi-20/lookup-tool.git cd lookup-tool python lookup.py 
+🚀 Installation 📱 Termux (Android) pkg update && pkg upgrade pkg install git python git clone https://github.com/onlygiorgi-20/lookup-tool.git cd lookup-tool python lookup.py 💻 Linux sudo apt update && sudo apt upgrade sudo apt install git python3 git clone https://github.com/onlygiorgi-20/lookup-tool.git cd lookup-tool python3 lookup.py 🪟 Windows git clone https://github.com/onlygiorgi-20/lookup-tool.git cd lookup-tool python lookup.py 
