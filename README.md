@@ -13,7 +13,7 @@ This tool is for educational purposes only
 Phone & username lookup is not 100% accurate
 No real tracking or hacking is included
 
-👑 Author Instagram: only.giorgi404 Facebook: only.giorgi Discord: only.giorgi Github: onlygiorgi-20 TikTok: only.giorgi20 💀 Exit Message Exiting... goodbye thank you for using lookup tool 
+👑 Author Instagram: only.giorgi404 Facebook: only.giorgi Discord: only.giorgi Github: onlygiorgi-20 TikTok: only.giorgi20 Exit Message Exiting... goodbye thank you for using lookup tool 
 
 ⭐ Star the repo if you like it
 
